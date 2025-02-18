@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "interRegular";
+    src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "interSemibold";
+    src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: "interBold";
+    src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+:root{
+    --interRegular: "interRegular", sans-serif;
+    --interSemibold: "interSemibold", sans-serif;
+    --interBold: "interBold", sans-serif;
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 1440px;
+    height: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Grey-900);
+}
+
+#container{
+    background-color: var(--Grey-800);
+    height: 65%;
+    width: 25%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#infos{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#infos img{
+    width: 22%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25%;
+    align-items: center;
+}
+
+#infos h1{
+    font-size: 22px;
+    font-family: var(--interSemibold);
+    color: var(--White);
+}
+
+#infos h3{
+    color: var(--Green);
+    font-family: var(--interSemibold);
+    font-size: 13px;
+}
+
+#container p{
+    color: var(--White);
+    font-family: var(--interRegular);
+    font-size: 14px;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buttons input{
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--White);
+    background-color: var(--Grey-700);
+    font-family: var(--interBold);
+    border: 1px solid var(--Grey-800);
+}
+
+#buttons input:hover{
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
